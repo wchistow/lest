@@ -17,7 +17,7 @@ def run():
         print(f'Running [{func.__name__}]... ', end='')
         try:
             func()
-        except AssertionError as e:
+        except AssertionError:
             console.print('[red]FAILED:[/red]')
             console.print(f'[red]{traceback.format_exc()}[/red]')
             failed += 1
