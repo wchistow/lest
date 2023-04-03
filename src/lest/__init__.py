@@ -1,8 +1,12 @@
 import traceback
 
+from rich.console import Console
+
 from registerer import Registerer
 
 register = Registerer()
+
+console = Console()
 
 
 def run():
@@ -12,7 +16,7 @@ def run():
         try:
             func()
         except AssertionError as e:
-            print("FAILED:")
-            traceback.print_exc()
+            console.print("[red]FAILED:[/red]")
+            console.print(f"[red]{traceback.format_exc()}[/red]")
         else:
-            print("OK")
+            console.print("[green]OK[/green]")
