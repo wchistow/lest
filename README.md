@@ -1,6 +1,6 @@
 # Lest
 
-## Light Python library for tests
+## Light Python library for testing
 
 ## Example:
 
