@@ -1,30 +1,8 @@
-import traceback
-
-from rich.console import Console
-
 from registerer import Registerer
+from runner import Runner
 
-register = Registerer()
+registerer = Registerer()
+runner = Runner()
 
-console = Console()
-
-
-def run():
-    """Runs all tests and report information about it."""
-    successful = 0
-    failed = 0
-    for func in register.funcs:
-        print(f'Running [{func.__name__}]... ', end='')
-        try:
-            func()
-        except AssertionError:
-            console.print('[red]FAILED:[/red]')
-            console.print(f'[red]{traceback.format_exc()}[/red]')
-            failed += 1
-        else:
-            console.print('[green]OK[/green]')
-            successful += 1
-
-    print(f'Run {successful + failed} tests:')
-    console.print(f'[green]   + Successful: {successful}[/green]')
-    console.print(f'[red]   + Failed: {failed}[/red]')
+register = registerer.__call__
+run = lambda: runner.run(registerer.funcs)
