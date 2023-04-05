@@ -2,7 +2,17 @@
 
 ## Light Python library for testing
 
-## Example:
+## Installing
+
+Just enter in command line:
+
+```shell
+pip install lest
+```
+
+## Usage
+
+### Example:
 
 Code:
 
@@ -23,7 +33,7 @@ def some_error_test():
 lest.run()
 ```
 
-Output:
+Output: (To visible the highlighting, run on the command line)
 
 ```text
 Running [test_adding_two_and_two]... OK
