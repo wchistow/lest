@@ -17,20 +17,20 @@ pip install lest
 Code:
 
 ```python
-import lest
+from lest import register, run
 
 
-@lest.register
+@register
 def test_adding_two_and_two():
     assert 2 + 2 == 4
 
 
-@lest.register
+@register
 def some_error_test():
     assert 2 + 2 == 5
 
 
-lest.run()
+run()
 ```
 
 Output: (To visible the highlighting, run on the command line)
