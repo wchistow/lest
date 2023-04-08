@@ -2,7 +2,10 @@
 
 ## Version 0.2.0 (??.04.2023):
 
- + results table added
+### Added:
+
+ + results table
+ + handling errors other than `AssertionError`
 
 ## Version 0.1.0 (05.04.2023):
 
