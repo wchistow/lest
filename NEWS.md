@@ -1,6 +1,6 @@
 # What's new in lest.
 
-## Version 0.2.0 (??.04.2023):
+## Version 0.2.0 (10.04.2023):
 
 ### Added:
 
