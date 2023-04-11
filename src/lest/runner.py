@@ -17,10 +17,13 @@ class Runner:
         self.elapsed = 0
         self.errors = 0
 
-    def run(self, funcs: list[Callable]) -> None:
+    def run(self, funcs: list[Callable], setup: Callable | None = None) -> None:
+        if setup is None:
+            setup = lambda: ...  # Empty function.
         for func in funcs:
             print(f'Running [{func.__name__}]... ', end='')
             start = perf_counter()
+            setup()
             try:
                 func()
             except AssertionError:

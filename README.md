@@ -17,7 +17,12 @@ pip install lest
 Code:
 
 ```python
-from lest import register, run
+from lest import register, run, setup
+
+
+@setup
+def my_setup():
+    print('Setup ran!')
 
 
 @register
