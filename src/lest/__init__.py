@@ -1,3 +1,4 @@
+from . import assertions
 from .registerer import Registerer
 from .runner import Runner
 from .setup import Setup

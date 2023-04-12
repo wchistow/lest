@@ -18,6 +18,7 @@ Code:
 
 ```python
 from lest import register, run, setup
+from lest.assertions import assert_eq
 
 
 @setup
@@ -27,17 +28,17 @@ def my_setup():
 
 @register
 def test_adding_two_and_two():
-    assert 2 + 2 == 4
+    assert_eq(2 + 2, 4)
 
 
 @register
 def some_error_test():
-    assert 2 + 2 == 5  # AssertionError
+    assert_eq(2 + 2, 5)  # AssertionError
 
 
 @register
 def some_more_error():
-    assert a + 2 == 4  # NameError
+    assert_eq(a + 2, 4)  # NameError
 
 
 run()
