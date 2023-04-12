@@ -1,4 +1,20 @@
-from typing import Iterable
+from typing import Iterable, Type
+
+
+class assert_raises:
+    def __init__(self, err: Type[Exception], /, message: str = ''):
+        self.err = err
+        self.message = message
+
+    def __enter__(self):
+        ...
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if exc_type is not None:
+            assert issubclass(exc_type, self.err), self.message
+        else:
+            assert False, self.message
+        return True
 
 
 def assert_true(exp, /, message: str = ''):
