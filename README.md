@@ -46,4 +46,4 @@ run()
 
 Output (to visible the highlighting, it's a print-screen):
 
-![](result.png)
+![](https://raw.githubusercontent.com/wchistow/lest/master/result.png)
