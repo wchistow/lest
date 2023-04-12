@@ -1,5 +1,12 @@
 # What's new in lest.
 
+## Version 0.3.0 (??.04.2023):
+
+### Added:
+
+ + module `assertions`
+ + decorator `setup`
+
 ## Version 0.2.0 (10.04.2023):
 
 ### Added:
