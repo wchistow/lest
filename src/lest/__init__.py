@@ -11,4 +11,4 @@ register = _registerer.__call__
 run = lambda: _runner.run(_registerer.funcs, setup=_setuper.func)
 setup = _setuper.__call__
 
-__all__ = ['register', 'run', 'setup']
+__all__ = ['register', 'run', 'setup', 'assertions']
