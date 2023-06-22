@@ -1,4 +1,4 @@
-from . import assertions
+from .assertions import *
 from .registerer import Registerer
 from .runner import Runner
 from .setup import Setup
@@ -11,4 +11,5 @@ register = _registerer.__call__
 run = lambda: _runner.run(_registerer.funcs, setup=_setuper.func)
 setup = _setuper.__call__
 
-__all__ = ['register', 'run', 'setup', 'assertions']
+__all__ = ['register', 'run', 'setup',
+           'assert_eq', 'assert_false', 'assert_in', 'assert_not_in', 'assert_raises']

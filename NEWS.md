@@ -1,5 +1,16 @@
 # What's new in lest.
 
+## Version 0.4.0 (??.06.2023):
+
+### Added:
+
+ + Printing name of function's module
+
+### Changed:
+
+ + Allow writing, for example, `lest.assert_eq`, but not `lest.assertions.assert_eq`
+ + Fix bug in `@lest.setup`: this decorator didn't return function
+
 ## Version 0.3.0 (12.04.2023):
 
 ### Added:

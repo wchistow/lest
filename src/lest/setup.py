@@ -7,3 +7,4 @@ class Setup:
 
     def __call__(self, func: Callable):
         self.func = func
+        return func
