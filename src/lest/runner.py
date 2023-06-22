@@ -49,7 +49,7 @@ class Runner:
         result_table.add_column('Errors', style='red')
         result_table.add_column('Time elapsed', style='white')
 
-        result_table.add_row(str(self.successful + self.failed),
+        result_table.add_row(str(self.successful + self.failed + self.errors),
                              str(self.successful),
                              str(self.failed),
                              str(self.errors),

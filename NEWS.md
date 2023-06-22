@@ -10,6 +10,7 @@
 
  + Allow writing, for example, `lest.assert_eq`, but not `lest.assertions.assert_eq`
  + Fix bug in `@lest.setup`: this decorator didn't return function
+ + `lest.run` didn't count errors in total
 
 ## Version 0.3.0 (12.04.2023):
 
