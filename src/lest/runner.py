@@ -21,7 +21,7 @@ class Runner:
         if setup is None:
             setup = lambda: ...  # Empty function.
         for func in funcs:
-            print(f'Running [{func.__name__}]... ', end='')
+            print(f'Running [{func.__module__}.{func.__name__}]... ', end='')
             start = perf_counter()
             setup()
             try:
