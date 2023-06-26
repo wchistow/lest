@@ -4,11 +4,7 @@
 
 ## Installing
 
-Just enter in command line:
-
-```shell
-pip install lest
-```
+See [installing](https://github.com/wchistow/lest/blob/master/docs/en/installing.md) in documentation.
 
 ## Usage
 
