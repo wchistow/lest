@@ -3,7 +3,7 @@
 In first, install requirement:
 
 ```sh
-pip install rich==13.3.3
+pip install rich==13.4.2
 ```
 
 And then, directly Lest:
