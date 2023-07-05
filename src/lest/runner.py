@@ -49,10 +49,16 @@ class Runner:
         result_table.add_column('Errors', style='red')
         result_table.add_column('Time elapsed', style='white')
 
-        result_table.add_row(str(self.successful + self.failed + self.errors),
+        total = self.successful + self.failed + self.errors
+        result_table.add_row(str(total),
                              str(self.successful),
                              str(self.failed),
                              str(self.errors),
                              '{:5.3f}'.format(self.elapsed))
 
         self.console.print(result_table)
+
+        if total != self.successful:  # some tests weren't successful
+            exit(1)
+        else:
+            exit(0)

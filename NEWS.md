@@ -1,5 +1,11 @@
 # What's new in lest.
 
+## Version 0.4.1 (??.07.2023):
+
+### Added:
+
+ + Exiting with non-zero exit code if some tests weren't passing
+
 ## Version 0.4.0 (22.06.2023):
 
 ### Added:
