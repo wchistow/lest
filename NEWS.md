@@ -1,5 +1,10 @@
 # What's new in lest.
 
+## Version 0.5.0 (??.07.2023):
+
+ + Remove attribute `message` from all assertions
+ + Improve `AssertionError`'s messages in all assertions
+
 ## Version 0.4.1 (05.07.2023):
 
 ### Added:
