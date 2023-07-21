@@ -1,4 +1,4 @@
-# Lest v0.4.0 documentation
+# Lest v0.5.0 documentation
 
 ## Index
 
