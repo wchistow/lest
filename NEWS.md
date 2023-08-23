@@ -1,9 +1,20 @@
 # What's new in lest.
 
+## Version 0.6.0 (??.08.2023):
+
+### Added:
+
+ + argument `info_level` to function `lest.run`
+
 ## Version 0.5.0 (21.07.2023):
 
- + Remove attribute `message` from all assertions
+### Changed:
+
  + Improve `AssertionError`'s messages in all assertions
+
+### Removed:
+
+ + Remove attribute `message` from all assertions
 
 ## Version 0.4.1 (05.07.2023):
 

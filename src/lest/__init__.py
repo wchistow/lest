@@ -1,3 +1,5 @@
+from functools import partial
+
 from .assertions import *
 from .registerer import Registerer
 from .runner import Runner
@@ -8,7 +10,7 @@ _runner = Runner()
 _setuper = Setup()
 
 register = _registerer.__call__
-run = lambda: _runner.run(_registerer.funcs, setup=_setuper.func)
+run = partial(_runner.run, _registerer.funcs, setup=_setuper.func)
 setup = _setuper.__call__
 
 __all__ = ['register', 'run', 'setup',

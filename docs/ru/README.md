@@ -1,8 +1,9 @@
-# Документация по Lest версии 0.5.0
+# Документация по Lest версии 0.6.0a
 
 ## Содержание
 
-+ [Установка](https://github.com/wchistow/lest/blob/master/docs/ru/installing.md)
-+ [Простые тесты](https://github.com/wchistow/lest/blob/master/docs/ru/basic_tests.md)
-+ [Подготовительная функция (setup)](https://github.com/wchistow/lest/blob/master/docs/ru/setup.md)
-+ [Сокращения для ключевого слова `assert`](https://github.com/wchistow/lest/blob/master/docs/ru/assertions.md)
+ + [Установка](https://github.com/wchistow/lest/blob/master/docs/ru/installing.md)
+ + [Простые тесты](https://github.com/wchistow/lest/blob/master/docs/ru/basic_tests.md)
+ + [Подготовительная функция (setup)](https://github.com/wchistow/lest/blob/master/docs/ru/setup.md)
+ + [Сокращения для ключевого слова `assert`](https://github.com/wchistow/lest/blob/master/docs/ru/assertions.md)
+ + [Настройка количества информации](https://github.com/wchistow/lest/blob/master/docs/ru/info_level.md)

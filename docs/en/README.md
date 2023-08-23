@@ -1,8 +1,9 @@
-# Lest v0.5.0 documentation
+# Lest v0.6.0a documentation
 
 ## Index
 
-+ [Installing](https://github.com/wchistow/lest/blob/master/docs/en/installing.md)
-+ [Basic Tests](https://github.com/wchistow/lest/blob/master/docs/en/basic_tests.md)
-+ [Setup](https://github.com/wchistow/lest/blob/master/docs/en/setup.md)
-+ [`assert`'s shortcuts](https://github.com/wchistow/lest/blob/master/docs/en/assertions.md)
+ + [Installing](https://github.com/wchistow/lest/blob/master/docs/en/installing.md)
+ + [Basic Tests](https://github.com/wchistow/lest/blob/master/docs/en/basic_tests.md)
+ + [Setup](https://github.com/wchistow/lest/blob/master/docs/en/setup.md)
+ + [`assert`'s shortcuts](https://github.com/wchistow/lest/blob/master/docs/en/assertions.md)
+ + [Customizing information quantity](https://github.com/wchistow/lest/blob/master/docs/ru/info_level.md)
