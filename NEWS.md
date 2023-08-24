@@ -5,6 +5,7 @@
 ### Added:
 
  + argument `info_level` to function `lest.run`
+ + argument `out_format` to function `lest.run`
 
 ## Version 0.5.0 (21.07.2023):
 
