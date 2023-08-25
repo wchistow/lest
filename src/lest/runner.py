@@ -1,7 +1,7 @@
 from json import dumps
 from time import perf_counter
 import traceback
-from typing import Callable, Literal, Any
+from typing import Any, Callable, Literal, Optional
 import xml.etree.ElementTree as ET
 
 from rich.console import Console
@@ -19,7 +19,7 @@ class Runner:
         self.elapsed = 0
         self.errors = 0
 
-    def run(self, /, funcs: list[Callable], setup: Callable[..., Any] | None = None,
+    def run(self, /, funcs: list[Callable], setup: Optional[Callable[..., Any]] = None,
             info_level: Literal['min', 'normal', 'max'] = 'normal',
             out_format: Literal['text', 'json', 'xml'] = 'text') -> None:
         if out_format == 'json':
