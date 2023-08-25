@@ -13,31 +13,30 @@ See [installing](https://github.com/wchistow/lest/blob/master/docs/en/installing
 Code:
 
 ```python
-from lest import register, run, setup
-from lest.assertions import assert_eq
+import lest
 
 
-@setup
+@lest.setup
 def my_setup():
     print('Setup ran!')
 
 
-@register
+@lest.register
 def test_adding_two_and_two():
-    assert_eq(2 + 2, 4)
+    lest.assert_eq(2 + 2, 4)
 
 
-@register
+@lest.register
 def some_error_test():
-    assert_eq(2 + 2, 5)  # AssertionError
+    lest.assert_eq(2 + 2, 5)  # AssertionError
 
 
-@register
+@lest.register
 def some_more_error():
-    assert_eq(a + 2, 4)  # NameError
+    lest.assert_eq(a + 2, 4)  # NameError
 
 
-run(info_level='max')
+lest.run(info_level='max')
 ```
 
 Output (to visible the highlighting, it's a print-screen):
