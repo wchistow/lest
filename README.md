@@ -37,7 +37,7 @@ def some_more_error():
     assert_eq(a + 2, 4)  # NameError
 
 
-run()
+run(info_level='max')
 ```
 
 Output (to visible the highlighting, it's a print-screen):
