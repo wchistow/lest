@@ -1,5 +1,11 @@
 # What's new in lest.
 
+## Version 0.7.0 (??.11.2023):
+
+### Added:
+
+ + keyword argument `message` to `lest.assert_raises`
+
 ## Version 0.6.0 (25.08.2023):
 
 ### Added:

@@ -2,8 +2,9 @@ from typing import Iterable, Type
 
 
 class assert_raises:
-    def __init__(self, err: Type, /):
+    def __init__(self, err: Type, /, message: str | None = None):
         self.err = err
+        self.message = message
 
     def __enter__(self):
         ...
@@ -12,6 +13,8 @@ class assert_raises:
         if exc_type is not None:
             if not issubclass(exc_type, self.err):
                 raise AssertionError(f'{exc_type} is not {self.err}.')
+            elif self.message is not None and str(exc_val) != self.message:
+                raise AssertionError(f'Error does not have the message that was passed.')
         else:
             raise AssertionError('no exception raised.')
         return True
