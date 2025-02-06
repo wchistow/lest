@@ -3,3 +3,6 @@ __pycache__/
 venv/
 src/lest.egg-info/
 dist/
+
+./test.py
+./src/test.py
