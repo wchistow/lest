@@ -20,7 +20,7 @@ classifiers = [
     'Operating System :: OS Independent',
 ]
 dependencies = [
-  'rich==13.4.2',
+  'rich==13.9.4',
 ]
 
 [project.urls]

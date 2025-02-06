@@ -1,15 +1,15 @@
-from typing import Iterable, Type
+from typing import Iterable, Type, NoReturn
 
 
 class assert_raises:
-    def __init__(self, err: Type, /, message: str | None = None):
+    def __init__(self, err: Type, /, message: str | None = None) -> None:
         self.err = err
         self.message = message
 
     def __enter__(self):
         ...
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
+    def __exit__(self, exc_type, exc_val, exc_tb) -> bool | NoReturn:
         if exc_type is not None:
             if not issubclass(exc_type, self.err):
                 raise AssertionError(f'{exc_type} is not {self.err}.')

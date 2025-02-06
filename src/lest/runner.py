@@ -10,13 +10,13 @@ from rich.table import Table
 
 class Runner:
     """Runs all tests and report information about it."""
-    def __init__(self):
+    def __init__(self) -> None:
         self.console = Console()  # for drawing
 
         # information
         self.successful = 0
         self.failed = 0
-        self.elapsed = 0
+        self.elapsed = 0.0
         self.errors = 0
 
     def run(self, /, funcs: list[Callable], setup: Optional[Callable[..., Any]] = None,
