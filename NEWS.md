@@ -1,5 +1,10 @@
 # What's new in lest.
 
+## Version 0.7.1 (06.02.2025):
+
+ + improve type hints
+ + update some requirements
+
 ## Version 0.7.0 (26.11.2023):
 
 ### Added:
